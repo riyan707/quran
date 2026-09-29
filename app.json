@@ -1,13 +1,15 @@
 {
   "expo": {
-    "name": "quran-srs",
+    "name": "Quran SRS",
     "slug": "quran-srs",
     "version": "1.0.0",
+    "scheme": "quransrs",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.quransrs.app"
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +18,17 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.quransrs.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-notifications",
+      "expo-font"
+    ]
   }
 }

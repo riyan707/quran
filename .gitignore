@@ -39,3 +39,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# raw downloaded seed data (re-fetch with scripts/build-seed-data.js)
+/scripts/seed-source/
